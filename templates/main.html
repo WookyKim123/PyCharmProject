@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+        .jumbotron {
+            background-image: url("./static/img for web/main_banner_final.png");
+            background-size: cover;}
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +14,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Wooky Portfolio</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,13 +40,6 @@
      <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-{#          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">#}
-{#            <span class="sr-only">Toggle navigation</span>#}
-{#            <span class="icon-bar"></span>#}
-{#            <span class="icon-bar"></span>#}
-{#            <span class="icon-bar"></span>#}
-{#          </button>#}
-{#          <a class="navbar-brand" href="#">Project name</a>#}
         </div>
 
         <div class="navbar-collapse collapse">
@@ -61,9 +59,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>About Me</h1>
-        <p>Welcom to the website I have created! </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h2>My Portfolio</h2>
+        <p>Welcome to the website <br>I have created! </p>
       </div>
     </div>
 
@@ -72,20 +69,33 @@
       <div class="row">
         <div class="col-md-4">
           <h2>Programming</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p>I was enrolled into programming class in school during my Junior year. The class was separated into two
+              semesters. In the first semester we learned how to use the application “Processing” - a powerful
+              programming language based on Java - used to create interactive graphics. During the second semester,
+              we learned how to use IntelliJ IDEA and for our final project we were asked to develop an educational
+              software that would help a teacher of our own choice. </p>
           <p><a class="btn btn-default" role="button" href="#programming"
                 aria-expanded="false" aria-controls="multiCollapseExample2">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Robotics</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p>I am currently taking Robotics in my Senior Year. I took both programming and CAD courses during my Junior
+              year as it was recommended to take these two courses before taking Robotics. Instead of showing what I
+              have done so far in class, you can see the robots I created in the KIS VEX Robotics club and the
+              Engineering Summer Academy at Penn Robotics Program. </p>
+
           <p><a class="btn btn-default" role="button" href="#robotics"
                 aria-expanded="false" aria-controls="multiCollapseExample2">View details &raquo;</a></p>
         </div>
 
         <div class="col-md-4">
           <h2>Computer Aided Design</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>During my junior year, I also took the course Computer Aided Design. In this course, I learned to implement
+              and utilize the design thinking process as well as learn the 2D and 3D computer aided design softwares
+              such as Sketchup or AutoCad. In the first semester we really worked with Sketchup a lot. We designed
+              virtual cities, a usb and a table holder for my programming teacher’s broken table.
+              Second semester, we were introduced to AutoCad and we designed phone cases, top of a pencil and so on.
+          </p>
             <p><a class="btn btn-default" role="button" href="#cad"
                 aria-expanded="false" aria-controls="multiCollapseExample2">View details &raquo;</a></p>
         </div>
@@ -95,127 +105,140 @@
           <h1>  </h1><br><br>
           <h1> Programming </h1>
           <div class="row">
-              <div class="col-md-4">
-                  <h4>
-                      TODO: GITHUB URL
-                  </h4>
-              </div>
-          </div>
-          <div class="row">
-             <div class="col-md-4">
-                 <video width="320" height="240" controls>
-                  <source src="./static/Sample_Video.mov" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-             </div>
+              <div class="col-md-6">
+                  <p>
+                      The link below goes to my GitHub Page in where I stored my code for this website, two graphics
+                      project - I have created using processing - that I felt most proud about and finally the html
+                      code for this website. In order to create this website I borrowed a server from ToastCloud - a
+                      Korean cloud service platform in which offers computing power, database storage, content delivery network
+                      and so on so forth - and then I implemented front-end using Bootstrap and HTML5. And I established
+                      back-end server using Nginx, gunicorn, and flask.
 
+                   <br><br>
+                   <a href="https://github.com/WookyKim123/Wooky_WorkSample" >GITHUB Repository</a>
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <iframe width="480" height="320" src="https://www.youtube.com/embed/RcSUeKBqtn4" frameborder="0" allowfullscreen></iframe>
+{#                  <video width="480" height="320" controls>#}
+{#                  <source src="./static/Sample_Video.mov" type="video/mp4">#}
+{#                Your browser does not support the video tag.#}
+{#                </video>#}
+             </div>
           </div>
       </div>
 
-{#      <div class="collapse multi-collapse" id="multiCollapseExample2">#}
-        <div id="robotics">
+      <div id="robotics">
           <h1>  </h1><br><br>
           <h1> Robotics </h1>
+           <h4>KIS VEX Robotics: Startstruck</h4>
+              <p>
+                  I was part of the VEX Robotics Team during my Junior year. I participated in the Starstruck and played
+                  the role as main driver, programmer and builder of my team.
+              </p>
           <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_1999.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+             <div class="col-md-3">
+                <img src="./static/img for web/IMG_1.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="180">
              </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2011.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+             <div class="col-md-3">
+                <img src="./static/img for web/IMG_2.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="180">
              </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2012.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+             <div class="col-md-3">
+                <img src="./static/img for web/IMG_3.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="180">
+             </div>
+              <div class="col-md-3">
+                <img src="./static/img for web/IMG_4.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="180">
              </div>
           </div>
-          <br>
+<br><br><br>
 
+            <h4>Engineering Summer Academy at Penn: Robotics</h4>
+            <p>
+                During the summer of my senior year, I attended the Engineering Summer Academy at Penn Robotics program.
+                During the three weeks, my team were given an assignment to create a robot that can play the bass guitar
+                - especially the bass keys of the song: "Under Pressure" by Queen. The pictures below show our team's
+                end product.
+            </p>
+         <div class="row">
+              <div class="col-md-9">
+                  <div class="row">
+                  <div class="col-md-4">
+                   <img src="./static/img for web/IMG_1999.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
+                  </div>
+                 <div class="col-md-4">
+                    <img src="./static/img for web/IMG_2028.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
+                 </div>
+                  <div class="col-md-4">
+                    <img src="./static/img for web/IMG_2038.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
+                 </div>
+          </div> <br>
           <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2025.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+               <div class="col-md-4">
+                <img src="./static/img for web/IMG_2051.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
+             </div>
+              <div class="col-md-4">
+                <img src="./static/img for web/IMG_2054.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
              </div>
              <div class="col-md-4">
-                <img src="./static/img for web/IMG_2028.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                <img src="./static/img for web/IMG_2062.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="150">
              </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2029.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
+         </div>
+              </div>
+              <div class="col-md-3">
+                 <div class="col-md-3">
+                    <img src="./static/img for web/IMG_5.JPG" class="img-rounded" alt="Cinque Terre" width="220" height="320">
+                 </div>
+              </div>
           </div>
-          <br>
-          <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2030.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2031.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2032.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-          </div>
-          <br>
 
-          <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2033.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2035.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2037.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-          </div>
           <br>
-
-          <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2038.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2040.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2051.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-          </div>
-          <br>
-
-          <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2052.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2054.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2061.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-          </div>
-          <br>
-
-          <div class="row">
-             <div class="col-md-4">
-                <img src="./static/img for web/IMG_2062.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             </div>
-          </div>
       </div>
 
-      <div id="cad">
-          <h1>  </h1><br><br>
-          <h1> CAD </h1>
-          <div class="row">
-             <div class="col-md-4">
-                <h3>TO BE DEVELOPED</h3>
-                <video width="320" height="240" controls>
-                  <source src="./static/img for web/IMG_2041.MOV" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-             </div>
-          </div>
-      </div>
 
+
+
+        <h1>  </h1><br> <br>
+        <h1> CAD </h1>
+        <div id="cad">
+        <div class="row">
+
+            <div class="col-md-6">
+                 <p>Among the many projects I have done, one of the projects I carried out was our High School Building’s
+                     second floor design. Having a goal to provide a “Makerspace” for our school’s high school student
+                     and to encourage our school’s STEM field subjects and activities, the school wanted CAD students to
+                     create a design in which the professional architecture can understand what it should look like. From
+                     a group of 15 students in the CAD Class, my friend and I were picked and asked to carry out this
+                     renewal after the director, principal and so on all saw our initial proposal and design. Both my
+                     partner and I went to ask our peers about what they would want the new second floor to look like and
+                     the features they would want to include. It took six whole months to get to our final design and to
+                     get our design to be passed for construction. Within the six months, my partner and I provided more
+                     than ten visits and presentations to the higher officials of our school - each time with a new
+                     design. The following video shows the making of the final design that was constructed over the
+                     summer break of 2017 and it was fortunate for me to have the opportunity to apply my learning to
+                     real life and to actually bring change to the community.
+                 </p>
+            </div>
+
+            <div class="col-md-6">
+                <iframe width="480" height="320" src="https://www.youtube.com/embed/p4D5eD7wJUQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+
+
+     </div>
+     <br><br><br><br><br>
       <footer>
-        <p>&copy; 2016 Company, Inc.</p>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+              <p>&copy; 2017 Wooky Work Sample.</p>
+          </div>
       </footer>
     </div> <!-- /container -->
 
